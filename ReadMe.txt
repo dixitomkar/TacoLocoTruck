@@ -1,4 +1,7 @@
 How to run :
+1. Clone repo
+2. java -jar order-0.0.1-SNAPSHOT.jar
+3. To run tests run mvn test
 
 Initialize app with data :
 1. Create sample items in the menu using http://localhost:8080/menu endpoint.
