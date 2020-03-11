@@ -1,6 +1,7 @@
 package com.example.order.order.apis;
 
 import com.example.order.order.models.Order;
+import com.example.order.order.models.OrderTotal;
 import com.example.order.order.service.OrderProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +19,7 @@ public class OrderResource {
     private OrderProcessor orderProcessor;
 
     @PostMapping
-    public double getTotal(@RequestBody List<Order> orders) {
+    public OrderTotal getTotal(@RequestBody List<Order> orders) {
         return orderProcessor.getTotal(orders);
     }
 }

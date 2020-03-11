@@ -16,7 +16,6 @@ public class MenuResource {
 
     @PostMapping
     public Item addInventory(@RequestBody Item item) {
-        System.out.println(item);
         return menuProcessor.addItem(item);
     }
 
